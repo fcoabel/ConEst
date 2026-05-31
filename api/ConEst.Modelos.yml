@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: ConEst.Modelos
+  commentId: N:ConEst.Modelos
+  id: ConEst.Modelos
+  children:
+  - ConEst.Modelos.Accion
+  - ConEst.Modelos.Elemento
+  - ConEst.Modelos.Estacion
+  - ConEst.Modelos.ListaAcciones
+  - ConEst.Modelos.Registro
+  - ConEst.Modelos.Rol
+  - ConEst.Modelos.TiposElementos
+  - ConEst.Modelos.Usuario
+  langs:
+  - csharp
+  - vb
+  name: ConEst.Modelos
+  nameWithType: ConEst.Modelos
+  fullName: ConEst.Modelos
+  type: Namespace
+  assemblies:
+  - ConEst
+references:
+- uid: ConEst.Modelos.ListaAcciones
+  commentId: T:ConEst.Modelos.ListaAcciones
+  href: ConEst.Modelos.ListaAcciones.html
+  name: ListaAcciones
+  nameWithType: ListaAcciones
+  fullName: ConEst.Modelos.ListaAcciones
+- uid: ConEst.Modelos.Accion
+  commentId: T:ConEst.Modelos.Accion
+  href: ConEst.Modelos.Accion.html
+  name: Accion
+  nameWithType: Accion
+  fullName: ConEst.Modelos.Accion
+- uid: ConEst.Modelos.Elemento
+  commentId: T:ConEst.Modelos.Elemento
+  parent: ConEst.Modelos
+  href: ConEst.Modelos.Elemento.html
+  name: Elemento
+  nameWithType: Elemento
+  fullName: ConEst.Modelos.Elemento
+- uid: ConEst.Modelos.Estacion
+  commentId: T:ConEst.Modelos.Estacion
+  parent: ConEst.Modelos
+  href: ConEst.Modelos.Estacion.html
+  name: Estacion
+  nameWithType: Estacion
+  fullName: ConEst.Modelos.Estacion
+- uid: ConEst.Modelos.Registro
+  commentId: T:ConEst.Modelos.Registro
+  parent: ConEst.Modelos
+  href: ConEst.Modelos.Registro.html
+  name: Registro
+  nameWithType: Registro
+  fullName: ConEst.Modelos.Registro
+- uid: ConEst.Modelos.Rol
+  commentId: T:ConEst.Modelos.Rol
+  href: ConEst.Modelos.Rol.html
+  name: Rol
+  nameWithType: Rol
+  fullName: ConEst.Modelos.Rol
+- uid: ConEst.Modelos.TiposElementos
+  commentId: T:ConEst.Modelos.TiposElementos
+  href: ConEst.Modelos.TiposElementos.html
+  name: TiposElementos
+  nameWithType: TiposElementos
+  fullName: ConEst.Modelos.TiposElementos
+- uid: ConEst.Modelos.Usuario
+  commentId: T:ConEst.Modelos.Usuario
+  parent: ConEst.Modelos
+  href: ConEst.Modelos.Usuario.html
+  name: Usuario
+  nameWithType: Usuario
+  fullName: ConEst.Modelos.Usuario
+- uid: ConEst.Modelos
+  commentId: N:ConEst.Modelos
+  href: ConEst.html
+  name: ConEst.Modelos
+  nameWithType: ConEst.Modelos
+  fullName: ConEst.Modelos
+  spec.csharp:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Modelos
+    name: Modelos
+    href: ConEst.Modelos.html
+  spec.vb:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Modelos
+    name: Modelos
+    href: ConEst.Modelos.html

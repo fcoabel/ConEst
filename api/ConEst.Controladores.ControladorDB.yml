@@ -1,0 +1,1696 @@
+### YamlMime:ManagedReference
+items:
+- uid: ConEst.Controladores.ControladorDB
+  commentId: T:ConEst.Controladores.ControladorDB
+  id: ControladorDB
+  parent: ConEst.Controladores
+  children:
+  - ConEst.Controladores.ControladorDB.#ctor
+  - ConEst.Controladores.ControladorDB.ActualizarElemento(ConEst.Modelos.Elemento)
+  - ConEst.Controladores.ControladorDB.ActualizarEstacion(ConEst.Modelos.Estacion)
+  - ConEst.Controladores.ControladorDB.ComprobarEstacion(System.String)
+  - ConEst.Controladores.ControladorDB.EliminarElemento(System.Int32)
+  - ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion(System.Int32)
+  - ConEst.Controladores.ControladorDB.EliminarEstacion(System.Int32)
+  - ConEst.Controladores.ControladorDB.EliminarUsuario(System.Int32)
+  - ConEst.Controladores.ControladorDB.InsertarElemento(ConEst.Modelos.Elemento)
+  - ConEst.Controladores.ControladorDB.InsertarRegistro(ConEst.Modelos.Registro)
+  - ConEst.Controladores.ControladorDB.InsertarUsuario(ConEst.Modelos.Usuario)
+  - ConEst.Controladores.ControladorDB.Login(System.String,System.String)
+  - ConEst.Controladores.ControladorDB.ObtenerAcciones
+  - ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion(System.Int32)
+  - ConEst.Controladores.ControladorDB.ObtenerEstaciones
+  - ConEst.Controladores.ControladorDB.ObtenerId(ConEst.Modelos.Estacion)
+  - ConEst.Controladores.ControladorDB.ObtenerRegistros
+  - ConEst.Controladores.ControladorDB.ObtenerRoles
+  - ConEst.Controladores.ControladorDB.ObtenerTiposElementos
+  - ConEst.Controladores.ControladorDB.ObtenerUsuarios
+  - ConEst.Controladores.ControladorDB.ProbarConexion(System.String,System.String,System.String,System.String)
+  - ConEst.Controladores.ControladorDB.UsuarioExiste(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ControladorDB
+  nameWithType: ControladorDB
+  fullName: ConEst.Controladores.ControladorDB
+  type: Class
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ControladorDB
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 11
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: >-
+    Proporciona métodos para interactuar con la base de datos MySQL,
+
+    incluyendo la obtención de datos y la validación de la conexión.
+  example: []
+  syntax:
+    content: public class ControladorDB
+    content.vb: Public Class ControladorDB
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ConEst.Controladores.ControladorDB.#ctor
+  commentId: M:ConEst.Controladores.ControladorDB.#ctor
+  id: '#ctor'
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ControladorDB()
+  nameWithType: ControladorDB.ControladorDB()
+  fullName: ConEst.Controladores.ControladorDB.ControladorDB()
+  type: Constructor
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: .ctor
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 42
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Inicializa una nueva instancia de la clase <xref href="ConEst.Controladores.ControladorDB" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ControladorDB()
+    content.vb: Public Sub New()
+  overload: ConEst.Controladores.ControladorDB.#ctor*
+  nameWithType.vb: ControladorDB.New()
+  fullName.vb: ConEst.Controladores.ControladorDB.New()
+  name.vb: New()
+- uid: ConEst.Controladores.ControladorDB.ProbarConexion(System.String,System.String,System.String,System.String)
+  commentId: M:ConEst.Controladores.ControladorDB.ProbarConexion(System.String,System.String,System.String,System.String)
+  id: ProbarConexion(System.String,System.String,System.String,System.String)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ProbarConexion(string, string, string, string)
+  nameWithType: ControladorDB.ProbarConexion(string, string, string, string)
+  fullName: ConEst.Controladores.ControladorDB.ProbarConexion(string, string, string, string)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ProbarConexion
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 57
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: >-
+    Verifica si es posible establecer una conexión con la base de datos
+
+    utilizando los parámetros proporcionados.
+  example: []
+  syntax:
+    content: public static bool ProbarConexion(string server = "", string dbName = "", string user = "", string password = "")
+    parameters:
+    - id: server
+      type: System.String
+      description: Dirección del servidor MySQL.
+    - id: dbName
+      type: System.String
+      description: Nombre de la base de datos.
+    - id: user
+      type: System.String
+      description: Usuario de acceso.
+    - id: password
+      type: System.String
+      description: Contraseña del usuario.
+    return:
+      type: System.Boolean
+      description: <code>true</code> si la conexión se establece correctamente; de lo contrario, <code>false</code>.
+    content.vb: Public Shared Function ProbarConexion(server As String = "", dbName As String = "", user As String = "", password As String = "") As Boolean
+  overload: ConEst.Controladores.ControladorDB.ProbarConexion*
+  nameWithType.vb: ControladorDB.ProbarConexion(String, String, String, String)
+  fullName.vb: ConEst.Controladores.ControladorDB.ProbarConexion(String, String, String, String)
+  name.vb: ProbarConexion(String, String, String, String)
+- uid: ConEst.Controladores.ControladorDB.Login(System.String,System.String)
+  commentId: M:ConEst.Controladores.ControladorDB.Login(System.String,System.String)
+  id: Login(System.String,System.String)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: Login(string, string)
+  nameWithType: ControladorDB.Login(string, string)
+  fullName: ConEst.Controladores.ControladorDB.Login(string, string)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: Login
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 85
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: >-
+    Valida las credenciales de un usuario y devuelve su información
+
+    si el inicio de sesión es correcto.
+  example: []
+  syntax:
+    content: public static Usuario? Login(string nombre, string contraseña)
+    parameters:
+    - id: nombre
+      type: System.String
+      description: Nombre del usuario.
+    - id: contraseña
+      type: System.String
+      description: Contraseña del usuario.
+    return:
+      type: ConEst.Modelos.Usuario
+      description: >-
+        Un objeto <xref href="ConEst.Modelos.Usuario" data-throw-if-not-resolved="false"></xref> si las credenciales son válidas;
+
+        de lo contrario, <code>null</code>.
+    content.vb: Public Shared Function Login(nombre As String, contraseña As String) As Usuario
+  overload: ConEst.Controladores.ControladorDB.Login*
+  nameWithType.vb: ControladorDB.Login(String, String)
+  fullName.vb: ConEst.Controladores.ControladorDB.Login(String, String)
+  name.vb: Login(String, String)
+- uid: ConEst.Controladores.ControladorDB.InsertarUsuario(ConEst.Modelos.Usuario)
+  commentId: M:ConEst.Controladores.ControladorDB.InsertarUsuario(ConEst.Modelos.Usuario)
+  id: InsertarUsuario(ConEst.Modelos.Usuario)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: InsertarUsuario(Usuario)
+  nameWithType: ControladorDB.InsertarUsuario(Usuario)
+  fullName: ConEst.Controladores.ControladorDB.InsertarUsuario(ConEst.Modelos.Usuario)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: InsertarUsuario
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 120
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Inserta un nuevo usuario en la base de datos.
+  example: []
+  syntax:
+    content: public static string InsertarUsuario(Usuario usuario)
+    parameters:
+    - id: usuario
+      type: ConEst.Modelos.Usuario
+      description: Objeto que contiene los datos del usuario a registrar.
+    return:
+      type: System.String
+      description: <code>"OK"</code> si la operación fue exitosa; de lo contrario, el mensaje de error.
+    content.vb: Public Shared Function InsertarUsuario(usuario As Usuario) As String
+  overload: ConEst.Controladores.ControladorDB.InsertarUsuario*
+- uid: ConEst.Controladores.ControladorDB.ObtenerAcciones
+  commentId: M:ConEst.Controladores.ControladorDB.ObtenerAcciones
+  id: ObtenerAcciones
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ObtenerAcciones()
+  nameWithType: ControladorDB.ObtenerAcciones()
+  fullName: ConEst.Controladores.ControladorDB.ObtenerAcciones()
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ObtenerAcciones
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 148
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Obtiene la lista completa de acciones registradas en la base de datos.
+  example: []
+  syntax:
+    content: public static List<Accion> ObtenerAcciones()
+    return:
+      type: System.Collections.Generic.List{ConEst.Modelos.Accion}
+      description: Una lista de objetos <xref href="ConEst.Modelos.Accion" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ObtenerAcciones() As List(Of Accion)
+  overload: ConEst.Controladores.ControladorDB.ObtenerAcciones*
+- uid: ConEst.Controladores.ControladorDB.ObtenerEstaciones
+  commentId: M:ConEst.Controladores.ControladorDB.ObtenerEstaciones
+  id: ObtenerEstaciones
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ObtenerEstaciones()
+  nameWithType: ControladorDB.ObtenerEstaciones()
+  fullName: ConEst.Controladores.ControladorDB.ObtenerEstaciones()
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ObtenerEstaciones
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 182
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Obtiene la lista de estaciones registradas en la base de datos.
+  example: []
+  syntax:
+    content: public static BindingList<Estacion> ObtenerEstaciones()
+    return:
+      type: System.ComponentModel.BindingList{ConEst.Modelos.Estacion}
+      description: Una colección <xref href="System.ComponentModel.BindingList%601" data-throw-if-not-resolved="false"></xref> con todas las estaciones.
+    content.vb: Public Shared Function ObtenerEstaciones() As BindingList(Of Estacion)
+  overload: ConEst.Controladores.ControladorDB.ObtenerEstaciones*
+- uid: ConEst.Controladores.ControladorDB.ObtenerUsuarios
+  commentId: M:ConEst.Controladores.ControladorDB.ObtenerUsuarios
+  id: ObtenerUsuarios
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ObtenerUsuarios()
+  nameWithType: ControladorDB.ObtenerUsuarios()
+  fullName: ConEst.Controladores.ControladorDB.ObtenerUsuarios()
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ObtenerUsuarios
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 221
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Obtiene la lista de usuarios registrados en la base de datos.
+  example: []
+  syntax:
+    content: public static BindingList<Usuario> ObtenerUsuarios()
+    return:
+      type: System.ComponentModel.BindingList{ConEst.Modelos.Usuario}
+      description: Una colección <xref href="System.ComponentModel.BindingList%601" data-throw-if-not-resolved="false"></xref> con los usuarios existentes.
+    content.vb: Public Shared Function ObtenerUsuarios() As BindingList(Of Usuario)
+  overload: ConEst.Controladores.ControladorDB.ObtenerUsuarios*
+- uid: ConEst.Controladores.ControladorDB.ObtenerRoles
+  commentId: M:ConEst.Controladores.ControladorDB.ObtenerRoles
+  id: ObtenerRoles
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ObtenerRoles()
+  nameWithType: ControladorDB.ObtenerRoles()
+  fullName: ConEst.Controladores.ControladorDB.ObtenerRoles()
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ObtenerRoles
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 255
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Obtiene la lista de roles registrados en la base de datos.
+  example: []
+  syntax:
+    content: public static BindingList<Rol> ObtenerRoles()
+    return:
+      type: System.ComponentModel.BindingList{ConEst.Modelos.Rol}
+      description: Una colección <xref href="System.ComponentModel.BindingList%601" data-throw-if-not-resolved="false"></xref> con todos los roles disponibles.
+    content.vb: Public Shared Function ObtenerRoles() As BindingList(Of Rol)
+  overload: ConEst.Controladores.ControladorDB.ObtenerRoles*
+- uid: ConEst.Controladores.ControladorDB.ObtenerRegistros
+  commentId: M:ConEst.Controladores.ControladorDB.ObtenerRegistros
+  id: ObtenerRegistros
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ObtenerRegistros()
+  nameWithType: ControladorDB.ObtenerRegistros()
+  fullName: ConEst.Controladores.ControladorDB.ObtenerRegistros()
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ObtenerRegistros
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 289
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Obtiene la lista de registros de actividad almacenados en la base de datos.
+  example: []
+  syntax:
+    content: public static BindingList<Registro> ObtenerRegistros()
+    return:
+      type: System.ComponentModel.BindingList{ConEst.Modelos.Registro}
+      description: Una colección <xref href="System.ComponentModel.BindingList%601" data-throw-if-not-resolved="false"></xref> con los registros encontrados.
+    content.vb: Public Shared Function ObtenerRegistros() As BindingList(Of Registro)
+  overload: ConEst.Controladores.ControladorDB.ObtenerRegistros*
+- uid: ConEst.Controladores.ControladorDB.ObtenerTiposElementos
+  commentId: M:ConEst.Controladores.ControladorDB.ObtenerTiposElementos
+  id: ObtenerTiposElementos
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ObtenerTiposElementos()
+  nameWithType: ControladorDB.ObtenerTiposElementos()
+  fullName: ConEst.Controladores.ControladorDB.ObtenerTiposElementos()
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ObtenerTiposElementos
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 327
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Obtiene la lista de tipos de elementos registrados en la base de datos.
+  example: []
+  syntax:
+    content: public static BindingList<TiposElementos> ObtenerTiposElementos()
+    return:
+      type: System.ComponentModel.BindingList{ConEst.Modelos.TiposElementos}
+      description: Una colección <xref href="System.ComponentModel.BindingList%601" data-throw-if-not-resolved="false"></xref> con los tipos disponibles.
+    content.vb: Public Shared Function ObtenerTiposElementos() As BindingList(Of TiposElementos)
+  overload: ConEst.Controladores.ControladorDB.ObtenerTiposElementos*
+- uid: ConEst.Controladores.ControladorDB.EliminarEstacion(System.Int32)
+  commentId: M:ConEst.Controladores.ControladorDB.EliminarEstacion(System.Int32)
+  id: EliminarEstacion(System.Int32)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: EliminarEstacion(int)
+  nameWithType: ControladorDB.EliminarEstacion(int)
+  fullName: ConEst.Controladores.ControladorDB.EliminarEstacion(int)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: EliminarEstacion
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 363
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Elimina una estación de la base de datos según su identificador.
+  example: []
+  syntax:
+    content: public static bool EliminarEstacion(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: Identificador de la estación a eliminar.
+    return:
+      type: System.Boolean
+      description: <code>true</code> si la estación fue eliminada correctamente; de lo contrario, <code>false</code>.
+    content.vb: Public Shared Function EliminarEstacion(id As Integer) As Boolean
+  overload: ConEst.Controladores.ControladorDB.EliminarEstacion*
+  nameWithType.vb: ControladorDB.EliminarEstacion(Integer)
+  fullName.vb: ConEst.Controladores.ControladorDB.EliminarEstacion(Integer)
+  name.vb: EliminarEstacion(Integer)
+- uid: ConEst.Controladores.ControladorDB.UsuarioExiste(System.String)
+  commentId: M:ConEst.Controladores.ControladorDB.UsuarioExiste(System.String)
+  id: UsuarioExiste(System.String)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: UsuarioExiste(string)
+  nameWithType: ControladorDB.UsuarioExiste(string)
+  fullName: ConEst.Controladores.ControladorDB.UsuarioExiste(string)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: UsuarioExiste
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 389
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Verifica si existe un usuario con el nombre especificado.
+  example: []
+  syntax:
+    content: public static bool UsuarioExiste(string nombre)
+    parameters:
+    - id: nombre
+      type: System.String
+      description: Nombre del usuario a buscar.
+    return:
+      type: System.Boolean
+      description: <code>true</code> si el usuario existe; de lo contrario, <code>false</code>.
+    content.vb: Public Shared Function UsuarioExiste(nombre As String) As Boolean
+  overload: ConEst.Controladores.ControladorDB.UsuarioExiste*
+  nameWithType.vb: ControladorDB.UsuarioExiste(String)
+  fullName.vb: ConEst.Controladores.ControladorDB.UsuarioExiste(String)
+  name.vb: UsuarioExiste(String)
+- uid: ConEst.Controladores.ControladorDB.InsertarRegistro(ConEst.Modelos.Registro)
+  commentId: M:ConEst.Controladores.ControladorDB.InsertarRegistro(ConEst.Modelos.Registro)
+  id: InsertarRegistro(ConEst.Modelos.Registro)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: InsertarRegistro(Registro)
+  nameWithType: ControladorDB.InsertarRegistro(Registro)
+  fullName: ConEst.Controladores.ControladorDB.InsertarRegistro(ConEst.Modelos.Registro)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: InsertarRegistro
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 413
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Inserta un nuevo registro de actividad en la base de datos.
+  example: []
+  syntax:
+    content: public static void InsertarRegistro(Registro registro)
+    parameters:
+    - id: registro
+      type: ConEst.Modelos.Registro
+      description: Objeto que contiene la información del registro a insertar.
+    content.vb: Public Shared Sub InsertarRegistro(registro As Registro)
+  overload: ConEst.Controladores.ControladorDB.InsertarRegistro*
+- uid: ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion(System.Int32)
+  commentId: M:ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion(System.Int32)
+  id: ObtenerElementosPorEstacion(System.Int32)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ObtenerElementosPorEstacion(int)
+  nameWithType: ControladorDB.ObtenerElementosPorEstacion(int)
+  fullName: ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion(int)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ObtenerElementosPorEstacion
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 443
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Obtiene todos los elementos asociados a una estación específica.
+  example: []
+  syntax:
+    content: public static BindingList<Elemento> ObtenerElementosPorEstacion(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: Identificador de la estación.
+    return:
+      type: System.ComponentModel.BindingList{ConEst.Modelos.Elemento}
+      description: >-
+        Una colección <xref href="System.ComponentModel.BindingList%601" data-throw-if-not-resolved="false"></xref> con los elementos encontrados.
+
+        Si ocurre un error, se devuelve una lista vacía.
+    content.vb: Public Shared Function ObtenerElementosPorEstacion(id As Integer) As BindingList(Of Elemento)
+  overload: ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion*
+  nameWithType.vb: ControladorDB.ObtenerElementosPorEstacion(Integer)
+  fullName.vb: ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion(Integer)
+  name.vb: ObtenerElementosPorEstacion(Integer)
+- uid: ConEst.Controladores.ControladorDB.ObtenerId(ConEst.Modelos.Estacion)
+  commentId: M:ConEst.Controladores.ControladorDB.ObtenerId(ConEst.Modelos.Estacion)
+  id: ObtenerId(ConEst.Modelos.Estacion)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ObtenerId(Estacion)
+  nameWithType: ControladorDB.ObtenerId(Estacion)
+  fullName: ConEst.Controladores.ControladorDB.ObtenerId(ConEst.Modelos.Estacion)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ObtenerId
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 479
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Inserta una nueva estación en la base de datos y devuelve su identificador generado.
+  example: []
+  syntax:
+    content: public static int ObtenerId(Estacion estacion)
+    parameters:
+    - id: estacion
+      type: ConEst.Modelos.Estacion
+      description: Objeto que contiene los datos de la estación a insertar.
+    return:
+      type: System.Int32
+      description: El identificador generado para la estación.
+    content.vb: Public Shared Function ObtenerId(estacion As Estacion) As Integer
+  overload: ConEst.Controladores.ControladorDB.ObtenerId*
+- uid: ConEst.Controladores.ControladorDB.ComprobarEstacion(System.String)
+  commentId: M:ConEst.Controladores.ControladorDB.ComprobarEstacion(System.String)
+  id: ComprobarEstacion(System.String)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ComprobarEstacion(string)
+  nameWithType: ControladorDB.ComprobarEstacion(string)
+  fullName: ConEst.Controladores.ControladorDB.ComprobarEstacion(string)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ComprobarEstacion
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 500
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Verifica si existe una estación con el nombre especificado.
+  example: []
+  syntax:
+    content: public static bool ComprobarEstacion(string nombre)
+    parameters:
+    - id: nombre
+      type: System.String
+      description: Nombre de la estación a comprobar.
+    return:
+      type: System.Boolean
+      description: <code>true</code> si la estación existe; de lo contrario, <code>false</code>.
+    content.vb: Public Shared Function ComprobarEstacion(nombre As String) As Boolean
+  overload: ConEst.Controladores.ControladorDB.ComprobarEstacion*
+  nameWithType.vb: ControladorDB.ComprobarEstacion(String)
+  fullName.vb: ConEst.Controladores.ControladorDB.ComprobarEstacion(String)
+  name.vb: ComprobarEstacion(String)
+- uid: ConEst.Controladores.ControladorDB.InsertarElemento(ConEst.Modelos.Elemento)
+  commentId: M:ConEst.Controladores.ControladorDB.InsertarElemento(ConEst.Modelos.Elemento)
+  id: InsertarElemento(ConEst.Modelos.Elemento)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: InsertarElemento(Elemento)
+  nameWithType: ControladorDB.InsertarElemento(Elemento)
+  fullName: ConEst.Controladores.ControladorDB.InsertarElemento(ConEst.Modelos.Elemento)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: InsertarElemento
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 518
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Inserta un nuevo elemento en la base de datos.
+  example: []
+  syntax:
+    content: public static string InsertarElemento(Elemento elemento)
+    parameters:
+    - id: elemento
+      type: ConEst.Modelos.Elemento
+      description: Objeto que contiene los datos del elemento a insertar.
+    return:
+      type: System.String
+      description: Una cadena vacía si la operación fue exitosa; de lo contrario, el mensaje de error.
+    content.vb: Public Shared Function InsertarElemento(elemento As Elemento) As String
+  overload: ConEst.Controladores.ControladorDB.InsertarElemento*
+- uid: ConEst.Controladores.ControladorDB.ActualizarEstacion(ConEst.Modelos.Estacion)
+  commentId: M:ConEst.Controladores.ControladorDB.ActualizarEstacion(ConEst.Modelos.Estacion)
+  id: ActualizarEstacion(ConEst.Modelos.Estacion)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ActualizarEstacion(Estacion)
+  nameWithType: ControladorDB.ActualizarEstacion(Estacion)
+  fullName: ConEst.Controladores.ControladorDB.ActualizarEstacion(ConEst.Modelos.Estacion)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ActualizarEstacion
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 547
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Actualiza los datos de una estación existente.
+  example: []
+  syntax:
+    content: public static bool ActualizarEstacion(Estacion estacion)
+    parameters:
+    - id: estacion
+      type: ConEst.Modelos.Estacion
+      description: Objeto que contiene los datos actualizados de la estación.
+    return:
+      type: System.Boolean
+      description: <code>true</code> si la actualización fue exitosa; de lo contrario, <code>false</code>.
+    content.vb: Public Shared Function ActualizarEstacion(estacion As Estacion) As Boolean
+  overload: ConEst.Controladores.ControladorDB.ActualizarEstacion*
+- uid: ConEst.Controladores.ControladorDB.ActualizarElemento(ConEst.Modelos.Elemento)
+  commentId: M:ConEst.Controladores.ControladorDB.ActualizarElemento(ConEst.Modelos.Elemento)
+  id: ActualizarElemento(ConEst.Modelos.Elemento)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: ActualizarElemento(Elemento)
+  nameWithType: ControladorDB.ActualizarElemento(Elemento)
+  fullName: ConEst.Controladores.ControladorDB.ActualizarElemento(ConEst.Modelos.Elemento)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: ActualizarElemento
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 576
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Actualiza los datos de un elemento existente.
+  example: []
+  syntax:
+    content: public static string ActualizarElemento(Elemento elemento)
+    parameters:
+    - id: elemento
+      type: ConEst.Modelos.Elemento
+      description: Objeto que contiene los datos actualizados del elemento.
+    return:
+      type: System.String
+      description: Una cadena vacía si la operación fue exitosa; de lo contrario, el mensaje de error.
+    content.vb: Public Shared Function ActualizarElemento(elemento As Elemento) As String
+  overload: ConEst.Controladores.ControladorDB.ActualizarElemento*
+- uid: ConEst.Controladores.ControladorDB.EliminarElemento(System.Int32)
+  commentId: M:ConEst.Controladores.ControladorDB.EliminarElemento(System.Int32)
+  id: EliminarElemento(System.Int32)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: EliminarElemento(int)
+  nameWithType: ControladorDB.EliminarElemento(int)
+  fullName: ConEst.Controladores.ControladorDB.EliminarElemento(int)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: EliminarElemento
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 604
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Elimina un elemento de la base de datos según su identificador.
+  example: []
+  syntax:
+    content: public static string EliminarElemento(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: Identificador del elemento a eliminar.
+    return:
+      type: System.String
+      description: Una cadena vacía si la operación fue exitosa; de lo contrario, el mensaje de error.
+    content.vb: Public Shared Function EliminarElemento(id As Integer) As String
+  overload: ConEst.Controladores.ControladorDB.EliminarElemento*
+  nameWithType.vb: ControladorDB.EliminarElemento(Integer)
+  fullName.vb: ConEst.Controladores.ControladorDB.EliminarElemento(Integer)
+  name.vb: EliminarElemento(Integer)
+- uid: ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion(System.Int32)
+  commentId: M:ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion(System.Int32)
+  id: EliminarElementoIdEstacion(System.Int32)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: EliminarElementoIdEstacion(int)
+  nameWithType: ControladorDB.EliminarElementoIdEstacion(int)
+  fullName: ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion(int)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: EliminarElementoIdEstacion
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 631
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Elimina todos los elementos asociados a una estación específica.
+  example: []
+  syntax:
+    content: public static bool EliminarElementoIdEstacion(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: Identificador de la estación.
+    return:
+      type: System.Boolean
+      description: <code>true</code> si la operación fue exitosa; de lo contrario, <code>false</code>.
+    content.vb: Public Shared Function EliminarElementoIdEstacion(id As Integer) As Boolean
+  overload: ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion*
+  nameWithType.vb: ControladorDB.EliminarElementoIdEstacion(Integer)
+  fullName.vb: ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion(Integer)
+  name.vb: EliminarElementoIdEstacion(Integer)
+- uid: ConEst.Controladores.ControladorDB.EliminarUsuario(System.Int32)
+  commentId: M:ConEst.Controladores.ControladorDB.EliminarUsuario(System.Int32)
+  id: EliminarUsuario(System.Int32)
+  parent: ConEst.Controladores.ControladorDB
+  langs:
+  - csharp
+  - vb
+  name: EliminarUsuario(int)
+  nameWithType: ControladorDB.EliminarUsuario(int)
+  fullName: ConEst.Controladores.ControladorDB.EliminarUsuario(int)
+  type: Method
+  source:
+    remote:
+      path: ConEst/Controladores/ControladorDB.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: EliminarUsuario
+    path: ConEst/Controladores/ControladorDB.cs
+    startLine: 656
+  assemblies:
+  - ConEst
+  namespace: ConEst.Controladores
+  summary: Elimina un usuario de la base de datos según su identificador.
+  example: []
+  syntax:
+    content: public static bool EliminarUsuario(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: Identificador del usuario a eliminar.
+    return:
+      type: System.Boolean
+      description: <code>true</code> si la operación fue exitosa; de lo contrario, <code>false</code>.
+    content.vb: Public Shared Function EliminarUsuario(id As Integer) As Boolean
+  overload: ConEst.Controladores.ControladorDB.EliminarUsuario*
+  nameWithType.vb: ControladorDB.EliminarUsuario(Integer)
+  fullName.vb: ConEst.Controladores.ControladorDB.EliminarUsuario(Integer)
+  name.vb: EliminarUsuario(Integer)
+references:
+- uid: ConEst.Controladores
+  commentId: N:ConEst.Controladores
+  href: ConEst.html
+  name: ConEst.Controladores
+  nameWithType: ConEst.Controladores
+  fullName: ConEst.Controladores
+  spec.csharp:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Controladores
+    name: Controladores
+    href: ConEst.Controladores.html
+  spec.vb:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Controladores
+    name: Controladores
+    href: ConEst.Controladores.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ConEst.Controladores.ControladorDB
+  commentId: T:ConEst.Controladores.ControladorDB
+  href: ConEst.Controladores.ControladorDB.html
+  name: ControladorDB
+  nameWithType: ControladorDB
+  fullName: ConEst.Controladores.ControladorDB
+- uid: ConEst.Controladores.ControladorDB.#ctor*
+  commentId: Overload:ConEst.Controladores.ControladorDB.#ctor
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB__ctor
+  name: ControladorDB
+  nameWithType: ControladorDB.ControladorDB
+  fullName: ConEst.Controladores.ControladorDB.ControladorDB
+  nameWithType.vb: ControladorDB.New
+  fullName.vb: ConEst.Controladores.ControladorDB.New
+  name.vb: New
+- uid: ConEst.Controladores.ControladorDB.ProbarConexion*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ProbarConexion
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ProbarConexion_System_String_System_String_System_String_System_String_
+  name: ProbarConexion
+  nameWithType: ControladorDB.ProbarConexion
+  fullName: ConEst.Controladores.ControladorDB.ProbarConexion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ConEst.Modelos.Usuario
+  commentId: T:ConEst.Modelos.Usuario
+  parent: ConEst.Modelos
+  href: ConEst.Modelos.Usuario.html
+  name: Usuario
+  nameWithType: Usuario
+  fullName: ConEst.Modelos.Usuario
+- uid: ConEst.Controladores.ControladorDB.Login*
+  commentId: Overload:ConEst.Controladores.ControladorDB.Login
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_Login_System_String_System_String_
+  name: Login
+  nameWithType: ControladorDB.Login
+  fullName: ConEst.Controladores.ControladorDB.Login
+- uid: ConEst.Modelos
+  commentId: N:ConEst.Modelos
+  href: ConEst.html
+  name: ConEst.Modelos
+  nameWithType: ConEst.Modelos
+  fullName: ConEst.Modelos
+  spec.csharp:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Modelos
+    name: Modelos
+    href: ConEst.Modelos.html
+  spec.vb:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Modelos
+    name: Modelos
+    href: ConEst.Modelos.html
+- uid: ConEst.Controladores.ControladorDB.InsertarUsuario*
+  commentId: Overload:ConEst.Controladores.ControladorDB.InsertarUsuario
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_InsertarUsuario_ConEst_Modelos_Usuario_
+  name: InsertarUsuario
+  nameWithType: ControladorDB.InsertarUsuario
+  fullName: ConEst.Controladores.ControladorDB.InsertarUsuario
+- uid: ConEst.Modelos.Accion
+  commentId: T:ConEst.Modelos.Accion
+  href: ConEst.Modelos.Accion.html
+  name: Accion
+  nameWithType: Accion
+  fullName: ConEst.Modelos.Accion
+- uid: ConEst.Controladores.ControladorDB.ObtenerAcciones*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ObtenerAcciones
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ObtenerAcciones
+  name: ObtenerAcciones
+  nameWithType: ControladorDB.ObtenerAcciones
+  fullName: ConEst.Controladores.ControladorDB.ObtenerAcciones
+- uid: System.Collections.Generic.List{ConEst.Modelos.Accion}
+  commentId: T:System.Collections.Generic.List{ConEst.Modelos.Accion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Accion>
+  nameWithType: List<Accion>
+  fullName: System.Collections.Generic.List<ConEst.Modelos.Accion>
+  nameWithType.vb: List(Of Accion)
+  fullName.vb: System.Collections.Generic.List(Of ConEst.Modelos.Accion)
+  name.vb: List(Of Accion)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ConEst.Modelos.Accion
+    name: Accion
+    href: ConEst.Modelos.Accion.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ConEst.Modelos.Accion
+    name: Accion
+    href: ConEst.Modelos.Accion.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.ComponentModel.BindingList`1
+  commentId: T:System.ComponentModel.BindingList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  name: BindingList<T>
+  nameWithType: BindingList<T>
+  fullName: System.ComponentModel.BindingList<T>
+  nameWithType.vb: BindingList(Of T)
+  fullName.vb: System.ComponentModel.BindingList(Of T)
+  name.vb: BindingList(Of T)
+  spec.csharp:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ConEst.Controladores.ControladorDB.ObtenerEstaciones*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ObtenerEstaciones
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ObtenerEstaciones
+  name: ObtenerEstaciones
+  nameWithType: ControladorDB.ObtenerEstaciones
+  fullName: ConEst.Controladores.ControladorDB.ObtenerEstaciones
+- uid: System.ComponentModel.BindingList{ConEst.Modelos.Estacion}
+  commentId: T:System.ComponentModel.BindingList{ConEst.Modelos.Estacion}
+  parent: System.ComponentModel
+  definition: System.ComponentModel.BindingList`1
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  name: BindingList<Estacion>
+  nameWithType: BindingList<Estacion>
+  fullName: System.ComponentModel.BindingList<ConEst.Modelos.Estacion>
+  nameWithType.vb: BindingList(Of Estacion)
+  fullName.vb: System.ComponentModel.BindingList(Of ConEst.Modelos.Estacion)
+  name.vb: BindingList(Of Estacion)
+  spec.csharp:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: <
+  - uid: ConEst.Modelos.Estacion
+    name: Estacion
+    href: ConEst.Modelos.Estacion.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ConEst.Modelos.Estacion
+    name: Estacion
+    href: ConEst.Modelos.Estacion.html
+  - name: )
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: ConEst.Controladores.ControladorDB.ObtenerUsuarios*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ObtenerUsuarios
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ObtenerUsuarios
+  name: ObtenerUsuarios
+  nameWithType: ControladorDB.ObtenerUsuarios
+  fullName: ConEst.Controladores.ControladorDB.ObtenerUsuarios
+- uid: System.ComponentModel.BindingList{ConEst.Modelos.Usuario}
+  commentId: T:System.ComponentModel.BindingList{ConEst.Modelos.Usuario}
+  parent: System.ComponentModel
+  definition: System.ComponentModel.BindingList`1
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  name: BindingList<Usuario>
+  nameWithType: BindingList<Usuario>
+  fullName: System.ComponentModel.BindingList<ConEst.Modelos.Usuario>
+  nameWithType.vb: BindingList(Of Usuario)
+  fullName.vb: System.ComponentModel.BindingList(Of ConEst.Modelos.Usuario)
+  name.vb: BindingList(Of Usuario)
+  spec.csharp:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: <
+  - uid: ConEst.Modelos.Usuario
+    name: Usuario
+    href: ConEst.Modelos.Usuario.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ConEst.Modelos.Usuario
+    name: Usuario
+    href: ConEst.Modelos.Usuario.html
+  - name: )
+- uid: ConEst.Controladores.ControladorDB.ObtenerRoles*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ObtenerRoles
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ObtenerRoles
+  name: ObtenerRoles
+  nameWithType: ControladorDB.ObtenerRoles
+  fullName: ConEst.Controladores.ControladorDB.ObtenerRoles
+- uid: System.ComponentModel.BindingList{ConEst.Modelos.Rol}
+  commentId: T:System.ComponentModel.BindingList{ConEst.Modelos.Rol}
+  parent: System.ComponentModel
+  definition: System.ComponentModel.BindingList`1
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  name: BindingList<Rol>
+  nameWithType: BindingList<Rol>
+  fullName: System.ComponentModel.BindingList<ConEst.Modelos.Rol>
+  nameWithType.vb: BindingList(Of Rol)
+  fullName.vb: System.ComponentModel.BindingList(Of ConEst.Modelos.Rol)
+  name.vb: BindingList(Of Rol)
+  spec.csharp:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: <
+  - uid: ConEst.Modelos.Rol
+    name: Rol
+    href: ConEst.Modelos.Rol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ConEst.Modelos.Rol
+    name: Rol
+    href: ConEst.Modelos.Rol.html
+  - name: )
+- uid: ConEst.Controladores.ControladorDB.ObtenerRegistros*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ObtenerRegistros
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ObtenerRegistros
+  name: ObtenerRegistros
+  nameWithType: ControladorDB.ObtenerRegistros
+  fullName: ConEst.Controladores.ControladorDB.ObtenerRegistros
+- uid: System.ComponentModel.BindingList{ConEst.Modelos.Registro}
+  commentId: T:System.ComponentModel.BindingList{ConEst.Modelos.Registro}
+  parent: System.ComponentModel
+  definition: System.ComponentModel.BindingList`1
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  name: BindingList<Registro>
+  nameWithType: BindingList<Registro>
+  fullName: System.ComponentModel.BindingList<ConEst.Modelos.Registro>
+  nameWithType.vb: BindingList(Of Registro)
+  fullName.vb: System.ComponentModel.BindingList(Of ConEst.Modelos.Registro)
+  name.vb: BindingList(Of Registro)
+  spec.csharp:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: <
+  - uid: ConEst.Modelos.Registro
+    name: Registro
+    href: ConEst.Modelos.Registro.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ConEst.Modelos.Registro
+    name: Registro
+    href: ConEst.Modelos.Registro.html
+  - name: )
+- uid: ConEst.Controladores.ControladorDB.ObtenerTiposElementos*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ObtenerTiposElementos
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ObtenerTiposElementos
+  name: ObtenerTiposElementos
+  nameWithType: ControladorDB.ObtenerTiposElementos
+  fullName: ConEst.Controladores.ControladorDB.ObtenerTiposElementos
+- uid: System.ComponentModel.BindingList{ConEst.Modelos.TiposElementos}
+  commentId: T:System.ComponentModel.BindingList{ConEst.Modelos.TiposElementos}
+  parent: System.ComponentModel
+  definition: System.ComponentModel.BindingList`1
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  name: BindingList<TiposElementos>
+  nameWithType: BindingList<TiposElementos>
+  fullName: System.ComponentModel.BindingList<ConEst.Modelos.TiposElementos>
+  nameWithType.vb: BindingList(Of TiposElementos)
+  fullName.vb: System.ComponentModel.BindingList(Of ConEst.Modelos.TiposElementos)
+  name.vb: BindingList(Of TiposElementos)
+  spec.csharp:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: <
+  - uid: ConEst.Modelos.TiposElementos
+    name: TiposElementos
+    href: ConEst.Modelos.TiposElementos.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ConEst.Modelos.TiposElementos
+    name: TiposElementos
+    href: ConEst.Modelos.TiposElementos.html
+  - name: )
+- uid: ConEst.Controladores.ControladorDB.EliminarEstacion*
+  commentId: Overload:ConEst.Controladores.ControladorDB.EliminarEstacion
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_EliminarEstacion_System_Int32_
+  name: EliminarEstacion
+  nameWithType: ControladorDB.EliminarEstacion
+  fullName: ConEst.Controladores.ControladorDB.EliminarEstacion
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ConEst.Controladores.ControladorDB.UsuarioExiste*
+  commentId: Overload:ConEst.Controladores.ControladorDB.UsuarioExiste
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_UsuarioExiste_System_String_
+  name: UsuarioExiste
+  nameWithType: ControladorDB.UsuarioExiste
+  fullName: ConEst.Controladores.ControladorDB.UsuarioExiste
+- uid: ConEst.Controladores.ControladorDB.InsertarRegistro*
+  commentId: Overload:ConEst.Controladores.ControladorDB.InsertarRegistro
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_InsertarRegistro_ConEst_Modelos_Registro_
+  name: InsertarRegistro
+  nameWithType: ControladorDB.InsertarRegistro
+  fullName: ConEst.Controladores.ControladorDB.InsertarRegistro
+- uid: ConEst.Modelos.Registro
+  commentId: T:ConEst.Modelos.Registro
+  parent: ConEst.Modelos
+  href: ConEst.Modelos.Registro.html
+  name: Registro
+  nameWithType: Registro
+  fullName: ConEst.Modelos.Registro
+- uid: ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ObtenerElementosPorEstacion_System_Int32_
+  name: ObtenerElementosPorEstacion
+  nameWithType: ControladorDB.ObtenerElementosPorEstacion
+  fullName: ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion
+- uid: System.ComponentModel.BindingList{ConEst.Modelos.Elemento}
+  commentId: T:System.ComponentModel.BindingList{ConEst.Modelos.Elemento}
+  parent: System.ComponentModel
+  definition: System.ComponentModel.BindingList`1
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  name: BindingList<Elemento>
+  nameWithType: BindingList<Elemento>
+  fullName: System.ComponentModel.BindingList<ConEst.Modelos.Elemento>
+  nameWithType.vb: BindingList(Of Elemento)
+  fullName.vb: System.ComponentModel.BindingList(Of ConEst.Modelos.Elemento)
+  name.vb: BindingList(Of Elemento)
+  spec.csharp:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: <
+  - uid: ConEst.Modelos.Elemento
+    name: Elemento
+    href: ConEst.Modelos.Elemento.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ComponentModel.BindingList`1
+    name: BindingList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ConEst.Modelos.Elemento
+    name: Elemento
+    href: ConEst.Modelos.Elemento.html
+  - name: )
+- uid: ConEst.Controladores.ControladorDB.ObtenerId*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ObtenerId
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ObtenerId_ConEst_Modelos_Estacion_
+  name: ObtenerId
+  nameWithType: ControladorDB.ObtenerId
+  fullName: ConEst.Controladores.ControladorDB.ObtenerId
+- uid: ConEst.Modelos.Estacion
+  commentId: T:ConEst.Modelos.Estacion
+  parent: ConEst.Modelos
+  href: ConEst.Modelos.Estacion.html
+  name: Estacion
+  nameWithType: Estacion
+  fullName: ConEst.Modelos.Estacion
+- uid: ConEst.Controladores.ControladorDB.ComprobarEstacion*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ComprobarEstacion
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ComprobarEstacion_System_String_
+  name: ComprobarEstacion
+  nameWithType: ControladorDB.ComprobarEstacion
+  fullName: ConEst.Controladores.ControladorDB.ComprobarEstacion
+- uid: ConEst.Controladores.ControladorDB.InsertarElemento*
+  commentId: Overload:ConEst.Controladores.ControladorDB.InsertarElemento
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_InsertarElemento_ConEst_Modelos_Elemento_
+  name: InsertarElemento
+  nameWithType: ControladorDB.InsertarElemento
+  fullName: ConEst.Controladores.ControladorDB.InsertarElemento
+- uid: ConEst.Modelos.Elemento
+  commentId: T:ConEst.Modelos.Elemento
+  parent: ConEst.Modelos
+  href: ConEst.Modelos.Elemento.html
+  name: Elemento
+  nameWithType: Elemento
+  fullName: ConEst.Modelos.Elemento
+- uid: ConEst.Controladores.ControladorDB.ActualizarEstacion*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ActualizarEstacion
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ActualizarEstacion_ConEst_Modelos_Estacion_
+  name: ActualizarEstacion
+  nameWithType: ControladorDB.ActualizarEstacion
+  fullName: ConEst.Controladores.ControladorDB.ActualizarEstacion
+- uid: ConEst.Controladores.ControladorDB.ActualizarElemento*
+  commentId: Overload:ConEst.Controladores.ControladorDB.ActualizarElemento
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_ActualizarElemento_ConEst_Modelos_Elemento_
+  name: ActualizarElemento
+  nameWithType: ControladorDB.ActualizarElemento
+  fullName: ConEst.Controladores.ControladorDB.ActualizarElemento
+- uid: ConEst.Controladores.ControladorDB.EliminarElemento*
+  commentId: Overload:ConEst.Controladores.ControladorDB.EliminarElemento
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_EliminarElemento_System_Int32_
+  name: EliminarElemento
+  nameWithType: ControladorDB.EliminarElemento
+  fullName: ConEst.Controladores.ControladorDB.EliminarElemento
+- uid: ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion*
+  commentId: Overload:ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_EliminarElementoIdEstacion_System_Int32_
+  name: EliminarElementoIdEstacion
+  nameWithType: ControladorDB.EliminarElementoIdEstacion
+  fullName: ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion
+- uid: ConEst.Controladores.ControladorDB.EliminarUsuario*
+  commentId: Overload:ConEst.Controladores.ControladorDB.EliminarUsuario
+  href: ConEst.Controladores.ControladorDB.html#ConEst_Controladores_ControladorDB_EliminarUsuario_System_Int32_
+  name: EliminarUsuario
+  nameWithType: ControladorDB.EliminarUsuario
+  fullName: ConEst.Controladores.ControladorDB.EliminarUsuario

@@ -1,0 +1,663 @@
+### YamlMime:ManagedReference
+items:
+- uid: ConEst.Modelos.Estacion
+  commentId: T:ConEst.Modelos.Estacion
+  id: Estacion
+  parent: ConEst.Modelos
+  children:
+  - ConEst.Modelos.Estacion.#ctor
+  - ConEst.Modelos.Estacion.Descripcion
+  - ConEst.Modelos.Estacion.Id
+  - ConEst.Modelos.Estacion.Latitud
+  - ConEst.Modelos.Estacion.Longitud
+  - ConEst.Modelos.Estacion.Nombre
+  - ConEst.Modelos.Estacion.isEmpty
+  langs:
+  - csharp
+  - vb
+  name: Estacion
+  nameWithType: Estacion
+  fullName: ConEst.Modelos.Estacion
+  type: Class
+  source:
+    remote:
+      path: ConEst/Modelos/Estacion.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: Estacion
+    path: ConEst/Modelos/Estacion.cs
+    startLine: 10
+  assemblies:
+  - ConEst
+  namespace: ConEst.Modelos
+  summary: >-
+    Representa una estación dentro del sistema, incluyendo su identificación,
+
+    nombre, descripción y coordenadas geográficas.
+  example: []
+  syntax:
+    content: public class Estacion
+    content.vb: Public Class Estacion
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ConEst.Modelos.Estacion.Id
+  commentId: P:ConEst.Modelos.Estacion.Id
+  id: Id
+  parent: ConEst.Modelos.Estacion
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Estacion.Id
+  fullName: ConEst.Modelos.Estacion.Id
+  type: Property
+  source:
+    remote:
+      path: ConEst/Modelos/Estacion.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: Id
+    path: ConEst/Modelos/Estacion.cs
+    startLine: 15
+  assemblies:
+  - ConEst
+  namespace: ConEst.Modelos
+  summary: Identificador único de la estación.
+  example: []
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: ConEst.Modelos.Estacion.Id*
+- uid: ConEst.Modelos.Estacion.Nombre
+  commentId: P:ConEst.Modelos.Estacion.Nombre
+  id: Nombre
+  parent: ConEst.Modelos.Estacion
+  langs:
+  - csharp
+  - vb
+  name: Nombre
+  nameWithType: Estacion.Nombre
+  fullName: ConEst.Modelos.Estacion.Nombre
+  type: Property
+  source:
+    remote:
+      path: ConEst/Modelos/Estacion.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: Nombre
+    path: ConEst/Modelos/Estacion.cs
+    startLine: 20
+  assemblies:
+  - ConEst
+  namespace: ConEst.Modelos
+  summary: Nombre de la estación.
+  example: []
+  syntax:
+    content: public string? Nombre { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Nombre As String
+  overload: ConEst.Modelos.Estacion.Nombre*
+- uid: ConEst.Modelos.Estacion.Descripcion
+  commentId: P:ConEst.Modelos.Estacion.Descripcion
+  id: Descripcion
+  parent: ConEst.Modelos.Estacion
+  langs:
+  - csharp
+  - vb
+  name: Descripcion
+  nameWithType: Estacion.Descripcion
+  fullName: ConEst.Modelos.Estacion.Descripcion
+  type: Property
+  source:
+    remote:
+      path: ConEst/Modelos/Estacion.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: Descripcion
+    path: ConEst/Modelos/Estacion.cs
+    startLine: 25
+  assemblies:
+  - ConEst
+  namespace: ConEst.Modelos
+  summary: Descripción general de la estación.
+  example: []
+  syntax:
+    content: public string? Descripcion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Descripcion As String
+  overload: ConEst.Modelos.Estacion.Descripcion*
+- uid: ConEst.Modelos.Estacion.Latitud
+  commentId: P:ConEst.Modelos.Estacion.Latitud
+  id: Latitud
+  parent: ConEst.Modelos.Estacion
+  langs:
+  - csharp
+  - vb
+  name: Latitud
+  nameWithType: Estacion.Latitud
+  fullName: ConEst.Modelos.Estacion.Latitud
+  type: Property
+  source:
+    remote:
+      path: ConEst/Modelos/Estacion.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: Latitud
+    path: ConEst/Modelos/Estacion.cs
+    startLine: 30
+  assemblies:
+  - ConEst
+  namespace: ConEst.Modelos
+  summary: Latitud geográfica de la estación.
+  example: []
+  syntax:
+    content: public double? Latitud { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Latitud As Double?
+  overload: ConEst.Modelos.Estacion.Latitud*
+- uid: ConEst.Modelos.Estacion.Longitud
+  commentId: P:ConEst.Modelos.Estacion.Longitud
+  id: Longitud
+  parent: ConEst.Modelos.Estacion
+  langs:
+  - csharp
+  - vb
+  name: Longitud
+  nameWithType: Estacion.Longitud
+  fullName: ConEst.Modelos.Estacion.Longitud
+  type: Property
+  source:
+    remote:
+      path: ConEst/Modelos/Estacion.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: Longitud
+    path: ConEst/Modelos/Estacion.cs
+    startLine: 35
+  assemblies:
+  - ConEst
+  namespace: ConEst.Modelos
+  summary: Longitud geográfica de la estación.
+  example: []
+  syntax:
+    content: public double? Longitud { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Property Longitud As Double?
+  overload: ConEst.Modelos.Estacion.Longitud*
+- uid: ConEst.Modelos.Estacion.#ctor
+  commentId: M:ConEst.Modelos.Estacion.#ctor
+  id: '#ctor'
+  parent: ConEst.Modelos.Estacion
+  langs:
+  - csharp
+  - vb
+  name: Estacion()
+  nameWithType: Estacion.Estacion()
+  fullName: ConEst.Modelos.Estacion.Estacion()
+  type: Constructor
+  source:
+    remote:
+      path: ConEst/Modelos/Estacion.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: .ctor
+    path: ConEst/Modelos/Estacion.cs
+    startLine: 40
+  assemblies:
+  - ConEst
+  namespace: ConEst.Modelos
+  summary: Inicializa una nueva instancia de la clase <xref href="ConEst.Modelos.Estacion" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Estacion()
+    content.vb: Public Sub New()
+  overload: ConEst.Modelos.Estacion.#ctor*
+  nameWithType.vb: Estacion.New()
+  fullName.vb: ConEst.Modelos.Estacion.New()
+  name.vb: New()
+- uid: ConEst.Modelos.Estacion.isEmpty
+  commentId: M:ConEst.Modelos.Estacion.isEmpty
+  id: isEmpty
+  parent: ConEst.Modelos.Estacion
+  langs:
+  - csharp
+  - vb
+  name: isEmpty()
+  nameWithType: Estacion.isEmpty()
+  fullName: ConEst.Modelos.Estacion.isEmpty()
+  type: Method
+  source:
+    remote:
+      path: ConEst/Modelos/Estacion.cs
+      branch: main
+      repo: https://github.com/fcoabel/ConEst.git
+    id: isEmpty
+    path: ConEst/Modelos/Estacion.cs
+    startLine: 48
+  assemblies:
+  - ConEst
+  namespace: ConEst.Modelos
+  summary: Indica si la estación no contiene información relevante.
+  example: []
+  syntax:
+    content: public bool isEmpty()
+    return:
+      type: System.Boolean
+      description: <code>true</code> si todos los campos están vacíos o nulos; de lo contrario, <code>false</code>.
+    content.vb: Public Function isEmpty() As Boolean
+  overload: ConEst.Modelos.Estacion.isEmpty*
+references:
+- uid: ConEst.Modelos
+  commentId: N:ConEst.Modelos
+  href: ConEst.html
+  name: ConEst.Modelos
+  nameWithType: ConEst.Modelos
+  fullName: ConEst.Modelos
+  spec.csharp:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Modelos
+    name: Modelos
+    href: ConEst.Modelos.html
+  spec.vb:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Modelos
+    name: Modelos
+    href: ConEst.Modelos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ConEst.Modelos.Estacion.Id*
+  commentId: Overload:ConEst.Modelos.Estacion.Id
+  href: ConEst.Modelos.Estacion.html#ConEst_Modelos_Estacion_Id
+  name: Id
+  nameWithType: Estacion.Id
+  fullName: ConEst.Modelos.Estacion.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ConEst.Modelos.Estacion.Nombre*
+  commentId: Overload:ConEst.Modelos.Estacion.Nombre
+  href: ConEst.Modelos.Estacion.html#ConEst_Modelos_Estacion_Nombre
+  name: Nombre
+  nameWithType: Estacion.Nombre
+  fullName: ConEst.Modelos.Estacion.Nombre
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ConEst.Modelos.Estacion.Descripcion*
+  commentId: Overload:ConEst.Modelos.Estacion.Descripcion
+  href: ConEst.Modelos.Estacion.html#ConEst_Modelos_Estacion_Descripcion
+  name: Descripcion
+  nameWithType: Estacion.Descripcion
+  fullName: ConEst.Modelos.Estacion.Descripcion
+- uid: ConEst.Modelos.Estacion.Latitud*
+  commentId: Overload:ConEst.Modelos.Estacion.Latitud
+  href: ConEst.Modelos.Estacion.html#ConEst_Modelos_Estacion_Latitud
+  name: Latitud
+  nameWithType: Estacion.Latitud
+  fullName: ConEst.Modelos.Estacion.Latitud
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ConEst.Modelos.Estacion.Longitud*
+  commentId: Overload:ConEst.Modelos.Estacion.Longitud
+  href: ConEst.Modelos.Estacion.html#ConEst_Modelos_Estacion_Longitud
+  name: Longitud
+  nameWithType: Estacion.Longitud
+  fullName: ConEst.Modelos.Estacion.Longitud
+- uid: ConEst.Modelos.Estacion
+  commentId: T:ConEst.Modelos.Estacion
+  parent: ConEst.Modelos
+  href: ConEst.Modelos.Estacion.html
+  name: Estacion
+  nameWithType: Estacion
+  fullName: ConEst.Modelos.Estacion
+- uid: ConEst.Modelos.Estacion.#ctor*
+  commentId: Overload:ConEst.Modelos.Estacion.#ctor
+  href: ConEst.Modelos.Estacion.html#ConEst_Modelos_Estacion__ctor
+  name: Estacion
+  nameWithType: Estacion.Estacion
+  fullName: ConEst.Modelos.Estacion.Estacion
+  nameWithType.vb: Estacion.New
+  fullName.vb: ConEst.Modelos.Estacion.New
+  name.vb: New
+- uid: ConEst.Modelos.Estacion.isEmpty*
+  commentId: Overload:ConEst.Modelos.Estacion.isEmpty
+  href: ConEst.Modelos.Estacion.html#ConEst_Modelos_Estacion_isEmpty
+  name: isEmpty
+  nameWithType: Estacion.isEmpty
+  fullName: ConEst.Modelos.Estacion.isEmpty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

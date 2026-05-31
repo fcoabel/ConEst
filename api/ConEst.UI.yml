@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: ConEst.UI
+  commentId: N:ConEst.UI
+  id: ConEst.UI
+  children:
+  - ConEst.UI.AjustesUI
+  - ConEst.UI.EstacionUI
+  - ConEst.UI.HistorialAccionesUI
+  - ConEst.UI.NuevoElementoUI
+  - ConEst.UI.NuevoUsuarioUI
+  - ConEst.UI.SesionUI
+  langs:
+  - csharp
+  - vb
+  name: ConEst.UI
+  nameWithType: ConEst.UI
+  fullName: ConEst.UI
+  type: Namespace
+  assemblies:
+  - ConEst
+references:
+- uid: ConEst.UI.AjustesUI
+  commentId: T:ConEst.UI.AjustesUI
+  href: ConEst.UI.AjustesUI.html
+  name: AjustesUI
+  nameWithType: AjustesUI
+  fullName: ConEst.UI.AjustesUI
+- uid: ConEst.UI.EstacionUI
+  commentId: T:ConEst.UI.EstacionUI
+  href: ConEst.UI.EstacionUI.html
+  name: EstacionUI
+  nameWithType: EstacionUI
+  fullName: ConEst.UI.EstacionUI
+- uid: ConEst.UI.HistorialAccionesUI
+  commentId: T:ConEst.UI.HistorialAccionesUI
+  href: ConEst.UI.HistorialAccionesUI.html
+  name: HistorialAccionesUI
+  nameWithType: HistorialAccionesUI
+  fullName: ConEst.UI.HistorialAccionesUI
+- uid: ConEst.UI.NuevoElementoUI
+  commentId: T:ConEst.UI.NuevoElementoUI
+  href: ConEst.UI.NuevoElementoUI.html
+  name: NuevoElementoUI
+  nameWithType: NuevoElementoUI
+  fullName: ConEst.UI.NuevoElementoUI
+- uid: ConEst.UI.NuevoUsuarioUI
+  commentId: T:ConEst.UI.NuevoUsuarioUI
+  href: ConEst.UI.NuevoUsuarioUI.html
+  name: NuevoUsuarioUI
+  nameWithType: NuevoUsuarioUI
+  fullName: ConEst.UI.NuevoUsuarioUI
+- uid: ConEst.UI.SesionUI
+  commentId: T:ConEst.UI.SesionUI
+  href: ConEst.UI.SesionUI.html
+  name: SesionUI
+  nameWithType: SesionUI
+  fullName: ConEst.UI.SesionUI

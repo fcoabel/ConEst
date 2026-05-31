@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: ConEst.Controladores
+  commentId: N:ConEst.Controladores
+  id: ConEst.Controladores
+  children:
+  - ConEst.Controladores.ControladorDB
+  - ConEst.Controladores.Sesion
+  langs:
+  - csharp
+  - vb
+  name: ConEst.Controladores
+  nameWithType: ConEst.Controladores
+  fullName: ConEst.Controladores
+  type: Namespace
+  assemblies:
+  - ConEst
+references:
+- uid: ConEst.Controladores.ControladorDB
+  commentId: T:ConEst.Controladores.ControladorDB
+  href: ConEst.Controladores.ControladorDB.html
+  name: ControladorDB
+  nameWithType: ControladorDB
+  fullName: ConEst.Controladores.ControladorDB
+- uid: ConEst.Controladores.Sesion
+  commentId: T:ConEst.Controladores.Sesion
+  parent: ConEst.Controladores
+  href: ConEst.Controladores.Sesion.html
+  name: Sesion
+  nameWithType: Sesion
+  fullName: ConEst.Controladores.Sesion
+- uid: ConEst.Controladores
+  commentId: N:ConEst.Controladores
+  href: ConEst.html
+  name: ConEst.Controladores
+  nameWithType: ConEst.Controladores
+  fullName: ConEst.Controladores
+  spec.csharp:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Controladores
+    name: Controladores
+    href: ConEst.Controladores.html
+  spec.vb:
+  - uid: ConEst
+    name: ConEst
+    href: ConEst.html
+  - name: .
+  - uid: ConEst.Controladores
+    name: Controladores
+    href: ConEst.Controladores.html

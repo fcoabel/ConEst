@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: ConEst
+  commentId: N:ConEst
+  id: ConEst
+  children:
+  - ConEst.AppSettingsEditor
+  - ConEst.Config
+  - ConEst.EstacionesUI
+  langs:
+  - csharp
+  - vb
+  name: ConEst
+  nameWithType: ConEst
+  fullName: ConEst
+  type: Namespace
+  assemblies:
+  - ConEst
+references:
+- uid: ConEst.Config
+  commentId: T:ConEst.Config
+  href: ConEst.Config.html
+  name: Config
+  nameWithType: Config
+  fullName: ConEst.Config
+- uid: ConEst.AppSettingsEditor
+  commentId: T:ConEst.AppSettingsEditor
+  href: ConEst.AppSettingsEditor.html
+  name: AppSettingsEditor
+  nameWithType: AppSettingsEditor
+  fullName: ConEst.AppSettingsEditor
+- uid: ConEst.EstacionesUI
+  commentId: T:ConEst.EstacionesUI
+  href: ConEst.EstacionesUI.html
+  name: EstacionesUI
+  nameWithType: EstacionesUI
+  fullName: ConEst.EstacionesUI

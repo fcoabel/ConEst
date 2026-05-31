@@ -1,0 +1,16 @@
+# Build artifacts
+bin/
+obj/
+publish/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# DocFX output (NO subir)
+_site/
+
+# OS files
+Thumbs.db
+.DS_Store
