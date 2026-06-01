@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ControladorDB | ConEstDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ControladorDB | ConEstDocs ">
+      
+      <meta name="description" content="Proporciona m&#233;todos para interactuar con la base de datos MySQL, incluyendo la obtenci&#243;n de datos y la validaci&#243;n de la conexi&#243;n.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/fcoabel/ConEst/new/main/apiSpec/new?filename=ConEst_Controladores_ControladorDB.md&amp;value=---%0Auid%3A%20ConEst.Controladores.ControladorDB%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ConEstDocs">
+            ConEstDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ConEst.Controladores.ControladorDB">
+
+
+
+  <h1 id="ConEst_Controladores_ControladorDB" data-uid="ConEst.Controladores.ControladorDB" class="text-break">
+Class ControladorDB  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ConEst.html">ConEst</a>.<a class="xref" href="ConEst.Controladores.html">Controladores</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ConEst.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Proporciona métodos para interactuar con la base de datos MySQL,
+incluyendo la obtención de datos y la validación de la conexión.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ControladorDB</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ControladorDB</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ConEst_Controladores_ControladorDB__ctor_" data-uid="ConEst.Controladores.ControladorDB.#ctor*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB__ctor" data-uid="ConEst.Controladores.ControladorDB.#ctor">
+  ControladorDB()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inicializa una nueva instancia de la clase <a class="xref" href="ConEst.Controladores.ControladorDB.html">ControladorDB</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControladorDB()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ConEst_Controladores_ControladorDB_ActualizarElemento_" data-uid="ConEst.Controladores.ControladorDB.ActualizarElemento*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ActualizarElemento_ConEst_Modelos_Elemento_" data-uid="ConEst.Controladores.ControladorDB.ActualizarElemento(ConEst.Modelos.Elemento)">
+  ActualizarElemento(Elemento)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Actualiza los datos de un elemento existente.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ActualizarElemento(Elemento elemento)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elemento</code> <a class="xref" href="ConEst.Modelos.Elemento.html">Elemento</a></dt>
+    <dd><p>Objeto que contiene los datos actualizados del elemento.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Una cadena vacía si la operación fue exitosa; de lo contrario, el mensaje de error.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ActualizarEstacion_" data-uid="ConEst.Controladores.ControladorDB.ActualizarEstacion*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ActualizarEstacion_ConEst_Modelos_Estacion_" data-uid="ConEst.Controladores.ControladorDB.ActualizarEstacion(ConEst.Modelos.Estacion)">
+  ActualizarEstacion(Estacion)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Actualiza los datos de una estación existente.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ActualizarEstacion(Estacion estacion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>estacion</code> <a class="xref" href="ConEst.Modelos.Estacion.html">Estacion</a></dt>
+    <dd><p>Objeto que contiene los datos actualizados de la estación.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> si la actualización fue exitosa; de lo contrario, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ComprobarEstacion_" data-uid="ConEst.Controladores.ControladorDB.ComprobarEstacion*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ComprobarEstacion_System_String_" data-uid="ConEst.Controladores.ControladorDB.ComprobarEstacion(System.String)">
+  ComprobarEstacion(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifica si existe una estación con el nombre especificado.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ComprobarEstacion(string nombre)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nombre</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Nombre de la estación a comprobar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> si la estación existe; de lo contrario, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_EliminarElemento_" data-uid="ConEst.Controladores.ControladorDB.EliminarElemento*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_EliminarElemento_System_Int32_" data-uid="ConEst.Controladores.ControladorDB.EliminarElemento(System.Int32)">
+  EliminarElemento(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Elimina un elemento de la base de datos según su identificador.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EliminarElemento(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Identificador del elemento a eliminar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Una cadena vacía si la operación fue exitosa; de lo contrario, el mensaje de error.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_EliminarElementoIdEstacion_" data-uid="ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_EliminarElementoIdEstacion_System_Int32_" data-uid="ConEst.Controladores.ControladorDB.EliminarElementoIdEstacion(System.Int32)">
+  EliminarElementoIdEstacion(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Elimina todos los elementos asociados a una estación específica.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EliminarElementoIdEstacion(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Identificador de la estación.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> si la operación fue exitosa; de lo contrario, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_EliminarEstacion_" data-uid="ConEst.Controladores.ControladorDB.EliminarEstacion*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_EliminarEstacion_System_Int32_" data-uid="ConEst.Controladores.ControladorDB.EliminarEstacion(System.Int32)">
+  EliminarEstacion(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Elimina una estación de la base de datos según su identificador.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EliminarEstacion(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Identificador de la estación a eliminar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> si la estación fue eliminada correctamente; de lo contrario, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_EliminarUsuario_" data-uid="ConEst.Controladores.ControladorDB.EliminarUsuario*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_EliminarUsuario_System_Int32_" data-uid="ConEst.Controladores.ControladorDB.EliminarUsuario(System.Int32)">
+  EliminarUsuario(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L657"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Elimina un usuario de la base de datos según su identificador.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EliminarUsuario(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Identificador del usuario a eliminar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> si la operación fue exitosa; de lo contrario, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_InsertarElemento_" data-uid="ConEst.Controladores.ControladorDB.InsertarElemento*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_InsertarElemento_ConEst_Modelos_Elemento_" data-uid="ConEst.Controladores.ControladorDB.InsertarElemento(ConEst.Modelos.Elemento)">
+  InsertarElemento(Elemento)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserta un nuevo elemento en la base de datos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InsertarElemento(Elemento elemento)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elemento</code> <a class="xref" href="ConEst.Modelos.Elemento.html">Elemento</a></dt>
+    <dd><p>Objeto que contiene los datos del elemento a insertar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Una cadena vacía si la operación fue exitosa; de lo contrario, el mensaje de error.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_InsertarRegistro_" data-uid="ConEst.Controladores.ControladorDB.InsertarRegistro*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_InsertarRegistro_ConEst_Modelos_Registro_" data-uid="ConEst.Controladores.ControladorDB.InsertarRegistro(ConEst.Modelos.Registro)">
+  InsertarRegistro(Registro)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserta un nuevo registro de actividad en la base de datos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InsertarRegistro(Registro registro)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>registro</code> <a class="xref" href="ConEst.Modelos.Registro.html">Registro</a></dt>
+    <dd><p>Objeto que contiene la información del registro a insertar.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_InsertarUsuario_" data-uid="ConEst.Controladores.ControladorDB.InsertarUsuario*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_InsertarUsuario_ConEst_Modelos_Usuario_" data-uid="ConEst.Controladores.ControladorDB.InsertarUsuario(ConEst.Modelos.Usuario)">
+  InsertarUsuario(Usuario)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserta un nuevo usuario en la base de datos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InsertarUsuario(Usuario usuario)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>usuario</code> <a class="xref" href="ConEst.Modelos.Usuario.html">Usuario</a></dt>
+    <dd><p>Objeto que contiene los datos del usuario a registrar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><code>&quot;OK&quot;</code> si la operación fue exitosa; de lo contrario, el mensaje de error.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_Login_" data-uid="ConEst.Controladores.ControladorDB.Login*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_Login_System_String_System_String_" data-uid="ConEst.Controladores.ControladorDB.Login(System.String,System.String)">
+  Login(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Valida las credenciales de un usuario y devuelve su información
+si el inicio de sesión es correcto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Usuario? Login(string nombre, string contrase&#241;a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nombre</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Nombre del usuario.</p>
+</dd>
+    <dt><code>contraseña</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Contraseña del usuario.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ConEst.Modelos.Usuario.html">Usuario</a></dt>
+    <dd><p>Un objeto <a class="xref" href="ConEst.Modelos.Usuario.html">Usuario</a> si las credenciales son válidas;
+de lo contrario, <code>null</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ObtenerAcciones_" data-uid="ConEst.Controladores.ControladorDB.ObtenerAcciones*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ObtenerAcciones" data-uid="ConEst.Controladores.ControladorDB.ObtenerAcciones">
+  ObtenerAcciones()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtiene la lista completa de acciones registradas en la base de datos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Accion&gt; ObtenerAcciones()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ConEst.Modelos.Accion.html">Accion</a>&gt;</dt>
+    <dd><p>Una lista de objetos <a class="xref" href="ConEst.Modelos.Accion.html">Accion</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ObtenerElementosPorEstacion_" data-uid="ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ObtenerElementosPorEstacion_System_Int32_" data-uid="ConEst.Controladores.ControladorDB.ObtenerElementosPorEstacion(System.Int32)">
+  ObtenerElementosPorEstacion(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtiene todos los elementos asociados a una estación específica.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BindingList&lt;Elemento&gt; ObtenerElementosPorEstacion(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Identificador de la estación.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList</a>&lt;<a class="xref" href="ConEst.Modelos.Elemento.html">Elemento</a>&gt;</dt>
+    <dd><p>Una colección <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList&lt;T&gt;</a> con los elementos encontrados.
+Si ocurre un error, se devuelve una lista vacía.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ObtenerEstaciones_" data-uid="ConEst.Controladores.ControladorDB.ObtenerEstaciones*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ObtenerEstaciones" data-uid="ConEst.Controladores.ControladorDB.ObtenerEstaciones">
+  ObtenerEstaciones()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtiene la lista de estaciones registradas en la base de datos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BindingList&lt;Estacion&gt; ObtenerEstaciones()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList</a>&lt;<a class="xref" href="ConEst.Modelos.Estacion.html">Estacion</a>&gt;</dt>
+    <dd><p>Una colección <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList&lt;T&gt;</a> con todas las estaciones.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ObtenerId_" data-uid="ConEst.Controladores.ControladorDB.ObtenerId*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ObtenerId_ConEst_Modelos_Estacion_" data-uid="ConEst.Controladores.ControladorDB.ObtenerId(ConEst.Modelos.Estacion)">
+  ObtenerId(Estacion)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserta una nueva estación en la base de datos y devuelve su identificador generado.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ObtenerId(Estacion estacion)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>estacion</code> <a class="xref" href="ConEst.Modelos.Estacion.html">Estacion</a></dt>
+    <dd><p>Objeto que contiene los datos de la estación a insertar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>El identificador generado para la estación.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ObtenerRegistros_" data-uid="ConEst.Controladores.ControladorDB.ObtenerRegistros*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ObtenerRegistros" data-uid="ConEst.Controladores.ControladorDB.ObtenerRegistros">
+  ObtenerRegistros()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtiene la lista de registros de actividad almacenados en la base de datos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BindingList&lt;Registro&gt; ObtenerRegistros()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList</a>&lt;<a class="xref" href="ConEst.Modelos.Registro.html">Registro</a>&gt;</dt>
+    <dd><p>Una colección <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList&lt;T&gt;</a> con los registros encontrados.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ObtenerRoles_" data-uid="ConEst.Controladores.ControladorDB.ObtenerRoles*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ObtenerRoles" data-uid="ConEst.Controladores.ControladorDB.ObtenerRoles">
+  ObtenerRoles()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtiene la lista de roles registrados en la base de datos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BindingList&lt;Rol&gt; ObtenerRoles()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList</a>&lt;<a class="xref" href="ConEst.Modelos.Rol.html">Rol</a>&gt;</dt>
+    <dd><p>Una colección <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList&lt;T&gt;</a> con todos los roles disponibles.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ObtenerTiposElementos_" data-uid="ConEst.Controladores.ControladorDB.ObtenerTiposElementos*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ObtenerTiposElementos" data-uid="ConEst.Controladores.ControladorDB.ObtenerTiposElementos">
+  ObtenerTiposElementos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtiene la lista de tipos de elementos registrados en la base de datos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BindingList&lt;TiposElementos&gt; ObtenerTiposElementos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList</a>&lt;<a class="xref" href="ConEst.Modelos.TiposElementos.html">TiposElementos</a>&gt;</dt>
+    <dd><p>Una colección <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList&lt;T&gt;</a> con los tipos disponibles.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ObtenerUsuarios_" data-uid="ConEst.Controladores.ControladorDB.ObtenerUsuarios*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ObtenerUsuarios" data-uid="ConEst.Controladores.ControladorDB.ObtenerUsuarios">
+  ObtenerUsuarios()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtiene la lista de usuarios registrados en la base de datos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BindingList&lt;Usuario&gt; ObtenerUsuarios()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList</a>&lt;<a class="xref" href="ConEst.Modelos.Usuario.html">Usuario</a>&gt;</dt>
+    <dd><p>Una colección <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.bindinglist-1">BindingList&lt;T&gt;</a> con los usuarios existentes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_ProbarConexion_" data-uid="ConEst.Controladores.ControladorDB.ProbarConexion*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_ProbarConexion_System_String_System_String_System_String_System_String_" data-uid="ConEst.Controladores.ControladorDB.ProbarConexion(System.String,System.String,System.String,System.String)">
+  ProbarConexion(string, string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifica si es posible establecer una conexión con la base de datos
+utilizando los parámetros proporcionados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ProbarConexion(string server = &quot;&quot;, string dbName = &quot;&quot;, string user = &quot;&quot;, string password = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>server</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Dirección del servidor MySQL.</p>
+</dd>
+    <dt><code>dbName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Nombre de la base de datos.</p>
+</dd>
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Usuario de acceso.</p>
+</dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Contraseña del usuario.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> si la conexión se establece correctamente; de lo contrario, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ConEst_Controladores_ControladorDB_UsuarioExiste_" data-uid="ConEst.Controladores.ControladorDB.UsuarioExiste*"></a>
+
+  <h3 id="ConEst_Controladores_ControladorDB_UsuarioExiste_System_String_" data-uid="ConEst.Controladores.ControladorDB.UsuarioExiste(System.String)">
+  UsuarioExiste(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifica si existe un usuario con el nombre especificado.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UsuarioExiste(string nombre)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nombre</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Nombre del usuario a buscar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> si el usuario existe; de lo contrario, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/fcoabel/ConEst/blob/main/ConEst/Controladores/ControladorDB.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

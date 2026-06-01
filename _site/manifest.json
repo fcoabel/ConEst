@@ -1,0 +1,438 @@
+{
+  "source_base_path": "F:/AguadulceDAM/Proyecto/ConEst",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.AppSettingsEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.AppSettingsEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.AppSettingsEditor",
+      "Summary": "<p sourcefile=\"api/ConEst.AppSettingsEditor.yml\" sourcestartlinenumber=\"1\">Proporciona métodos para modificar valores dentro del archivo\nde configuración <code>appsettings.json</code> de la aplicación.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Config.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Config",
+      "Summary": "<p sourcefile=\"api/ConEst.Config.yml\" sourcestartlinenumber=\"1\">Proporciona acceso centralizado a la configuración de la aplicación,\ncargada desde el archivo <code>appsettings.json</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Controladores.ControladorDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Controladores.ControladorDB.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Controladores.ControladorDB",
+      "Summary": "<p sourcefile=\"api/ConEst.Controladores.ControladorDB.yml\" sourcestartlinenumber=\"1\">Proporciona métodos para interactuar con la base de datos MySQL,\nincluyendo la obtención de datos y la validación de la conexión.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Controladores.Sesion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Controladores.Sesion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Controladores.Sesion",
+      "Summary": "<p sourcefile=\"api/ConEst.Controladores.Sesion.yml\" sourcestartlinenumber=\"1\">Gestiona la sesión actual del sistema, permitiendo iniciar y cerrar sesión\npara un usuario específico.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Controladores.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Controladores.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Controladores",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.EstacionesUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.EstacionesUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.EstacionesUI",
+      "Summary": "<p sourcefile=\"api/ConEst.EstacionesUI.yml\" sourcestartlinenumber=\"1\">Formulario principal de gestión de estaciones. Permite visualizar,\nagregar, editar y eliminar estaciones, así como acceder a los ajustes\ny cerrar sesión.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Modelos.Accion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Modelos.Accion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Modelos.Accion",
+      "Summary": "<p sourcefile=\"api/ConEst.Modelos.Accion.yml\" sourcestartlinenumber=\"1\">Representa una acción del sistema con su identificador y tipo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Modelos.Elemento.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Modelos.Elemento.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Modelos.Elemento",
+      "Summary": "<p sourcefile=\"api/ConEst.Modelos.Elemento.yml\" sourcestartlinenumber=\"1\">Representa un elemento dentro del sistema, incluyendo su identificación,\nnombre, descripción, estación asociada y tipo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Modelos.Estacion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Modelos.Estacion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Modelos.Estacion",
+      "Summary": "<p sourcefile=\"api/ConEst.Modelos.Estacion.yml\" sourcestartlinenumber=\"1\">Representa una estación dentro del sistema, incluyendo su identificación,\nnombre, descripción y coordenadas geográficas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Modelos.ListaAcciones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Modelos.ListaAcciones.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Modelos.ListaAcciones",
+      "Summary": "<p sourcefile=\"api/ConEst.Modelos.ListaAcciones.yml\" sourcestartlinenumber=\"1\">Proporciona una lista estática de acciones obtenidas desde la base de datos\ny métodos utilitarios para consultarlas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Modelos.Registro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Modelos.Registro.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Modelos.Registro",
+      "Summary": "<p sourcefile=\"api/ConEst.Modelos.Registro.yml\" sourcestartlinenumber=\"1\">Representa un registro de actividad dentro del sistema, incluyendo\ninformación sobre la acción realizada, el usuario que la ejecutó\ny la fecha en que ocurrió.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Modelos.Rol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Modelos.Rol.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Modelos.Rol",
+      "Summary": "<p sourcefile=\"api/ConEst.Modelos.Rol.yml\" sourcestartlinenumber=\"1\">Representa un rol dentro del sistema, utilizado para definir\npermisos o niveles de acceso para los usuarios.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Modelos.TiposElementos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Modelos.TiposElementos.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Modelos.TiposElementos",
+      "Summary": "<p sourcefile=\"api/ConEst.Modelos.TiposElementos.yml\" sourcestartlinenumber=\"1\">Representa un tipo de elemento dentro del sistema, incluyendo su\nidentificador único y su nombre descriptivo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Modelos.Usuario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Modelos.Usuario.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Modelos.Usuario",
+      "Summary": "<p sourcefile=\"api/ConEst.Modelos.Usuario.yml\" sourcestartlinenumber=\"1\">Representa un usuario dentro del sistema, incluyendo su identificación,\nnombre, rol asignado y credenciales de acceso.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Modelos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Modelos.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Modelos",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Tests.Test1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Tests.Test1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Tests.Test1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.UI.AjustesUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.UI.AjustesUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.UI.AjustesUI",
+      "Summary": "<p sourcefile=\"api/ConEst.UI.AjustesUI.yml\" sourcestartlinenumber=\"1\">Formulario de ajustes generales de la aplicación.\nPermite administrar usuarios, visualizar registros de actividad\ny modificar la configuración de conexión a la base de datos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.UI.EstacionUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.UI.EstacionUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.UI.EstacionUI",
+      "Summary": "<p sourcefile=\"api/ConEst.UI.EstacionUI.yml\" sourcestartlinenumber=\"1\">Formulario para crear o editar estaciones. Permite gestionar sus datos\ny los elementos asociados, incluyendo inserción, actualización y eliminación.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.UI.HistorialAccionesUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.UI.HistorialAccionesUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.UI.HistorialAccionesUI",
+      "Summary": "<p sourcefile=\"api/ConEst.UI.HistorialAccionesUI.yml\" sourcestartlinenumber=\"1\">Formulario que muestra el historial de acciones registradas en el sistema.\nCarga automáticamente los registros desde la base de datos al inicializarse.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.UI.NuevoElementoUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.UI.NuevoElementoUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.UI.NuevoElementoUI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.UI.NuevoUsuarioUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.UI.NuevoUsuarioUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.UI.NuevoUsuarioUI",
+      "Summary": "<p sourcefile=\"api/ConEst.UI.NuevoUsuarioUI.yml\" sourcestartlinenumber=\"1\">Formulario para la creación de nuevos usuarios dentro del sistema.\nPermite ingresar nombre, contraseña y rol, validando los datos antes de registrarlos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.UI.SesionUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.UI.SesionUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.UI.SesionUI",
+      "Summary": "<p sourcefile=\"api/ConEst.UI.SesionUI.yml\" sourcestartlinenumber=\"1\">Ventana de inicio de sesión de la aplicación. Permite validar credenciales\ndel usuario y establecer la sesión activa.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.UI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst.UI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConEst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConEst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ConEst",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
